@@ -1,9 +1,20 @@
 window.MathJax = {
-  tex: { inlineMath: [["\$", "\$"]], displayMath: [["\
+  tex: {
+    inlineMath: [["\$", "\$"], ["$", "$"]],
+    displayMath: [["\
 $$
 ", "\
 $$
-"]] },
-  options: { skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"] }
+"], ["$$", "$$"]],
+    processEscapes: true,
+    processEnvironments: true
+  },
+  options: {
+    ignoreHtmlClass: ".*|tex2jax_ignore",
+    processHtmlClass: "tex2jax_ignore"
+  }
 };
-document$.subscribe(() => { MathJax.typesetPromise(); });
+
+document$.subscribe(() => {
+  MathJax.typesetPromise()
+});
