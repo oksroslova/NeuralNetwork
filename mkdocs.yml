@@ -1,21 +1,39 @@
 site_name: Нейронные сети в машинном обучении
-site_description: Конспекты лекций, АНО ВО «Университет «Технополис»
-# ЗАМЕНИТЕ на свои значения:
+site_description: Справочник лекций, АНО ВО «Университет «Технополис»
 site_url: https://oksroslova.github.io/NeuralNetwork/
 repo_url: https://github.com/oksroslova/NeuralNetwork
 repo_name: oksroslova/NeuralNetwork
+
 theme:
   name: material
   language: ru
   features:
     - navigation.sections
-    - content.code.copy
+    - navigation.indexes
+
 markdown_extensions:
   - tables
   - fenced_code
+  - attr_list
+
 extra_javascript:
   - javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
+
 nav:
-  - Введение: lectures/00_intro.md
-  - Лекция 1.1. Нейроны и активации: lectures/1_1_neurons.md
+  - Главная: index.md
+  - Вводная лекция: lectures/00_intro/index.md
+  - "Раздел 1. Введение в нейронные сети":
+      - lectures/1_vvedenie/index.md
+      - "Лекция 1.1. Нейроны, слои, функции активации": lectures/1_vvedenie/1_1_neurons/index.md
+      - Лабораторная работа 1.1: lectures/1_vvedenie/1_1_neurons/lab_1_1.md
+      - "Лекция 1.2. Обучение: градиентный спуск, backpropagation": lectures/1_vvedenie/1_2_training/index.md
+      - Лабораторная работа 1.2: lectures/1_vvedenie/1_2_training/lab_1_2.md
+  - "Раздел 2. Название раздела":
+      - lectures/2_chto_to/index.md
+      - "Лекция 2.1. ...": lectures/2_chto_to/lecture_1.md
+
+
