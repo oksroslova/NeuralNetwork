@@ -1,0 +1,21 @@
+site_name: Нейронные сети в машинном обучении
+site_description: Конспекты лекций, АНО ВО «Университет «Технополис»
+# ЗАМЕНИТЕ на свои значения:
+site_url: https://oksroslova.github.io/NeuralNetwork/
+repo_url: https://github.com/oksroslova/NeuralNetwork
+repo_name: oksroslova/NeuralNetwork
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.sections
+    - content.code.copy
+markdown_extensions:
+  - tables
+  - fenced_code
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+nav:
+  - Введение: lectures/00_intro.md
+  - Лекция 1.1. Нейроны и активации: lectures/1_1_neurons.md
