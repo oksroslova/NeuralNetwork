@@ -1,8 +1,6 @@
 site_name: Нейронные сети в машинном обучении
 site_description: Справочник лекций, АНО ВО «Университет «Технополис»
 site_url: https://oksroslova.github.io/NeuralNetwork/
-repo_url: https://github.com/oksroslova/NeuralNetwork
-repo_name: oksroslova/NeuralNetwork
 
 theme:
   name: material
