@@ -50,3 +50,5 @@
 - [Лабораторная работа 7.1](lectures/7_lecture/7_1_lecture/lab_7_1.md)
 - [Лекция 7.2. Деплой моделей (ONNX, Flask/Docker)](lectures/7_lecture/7_2_lecture/index.md)
 - [Лабораторная работа 7.2](lectures/7_lecture/7_2_lecture/lab_7_2.md)
+
+**Экзамен**
